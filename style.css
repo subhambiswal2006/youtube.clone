@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+
+}
+
+/*-----------------------------header part start----------------------------------*/
+a {
+    text-decoration: none;
+    color: #5a5a5a;
+
+}
+
+img {
+    cursor: pointer;
+}
+
+.logo {
+    height: 55px;
+    width: 145px;
+    margin-left: 5px;
+}
+
+.menu {
+    height: 18px;
+    width: 32px;
+    /* margin-left: 10px;*/
+    margin-top: 5px;
+}
+
+.flex-div {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    padding: 10px 1.5%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-right img {
+    width: 25px;
+    margin-right: 25px;
+
+}
+
+.nav-right .profile {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 0;
+}
+
+.nav-left .menu {
+    height: 25px;
+    width: 29px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+.nav-middle .mic-icon {
+    width: 16px;
+}
+
+.nav-middle .search {
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 35px;
+
+}
+
+.nav-middle .search input {
+    width: 400px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+/*-----------------------header part end-----------------------------*/
+
+
+
+/*------------------sidebar-------------------*/
+
+
+
+
+
+
+.sidebar {
+    background: #fff;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+
+}
+
+.shortcut-link a img {
+    width: 20px;
+    margin-right: 20px;
+
+}
+
+.shortcut-link a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    background: scroll;
+}
+
+.shortcut-link a:first-child {
+    color: #ed3833;
+}
+
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 139px;
+}
+
+.subscribed-list h3 {
+    font-size: 13px;
+    margin: 20px 0;
+    color: #5a5a5a;
+
+}
+
+.subscribed-list a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: nowrap;
+
+}
+
+.subscribed-list img {
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.small-sidebar {
+    width: 5%;
+}
+
+.small-sidebar a p {
+    display: none;
+
+}
+
+.small-sidebar h3 {
+    display: none;
+
+}
+
+.small-sidebar hr {
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+
+
+/*----------------------sidebar end-------------------------------*/
+
+
+
+/*----------------------main content start------------------------ */
+
+
+.container {
+    background: #fff;
+    padding-left: 16%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.large-container {
+
+    padding-left: 6%;
+
+}
+
+.banner {
+    width: 100%;
+
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+}
+
+.vid-list .thumbnail1 {
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.vid-list .flex-div {
+    align-items: flex-start;
+    margin-top: 7px;
+}
+
+.vid-list .flex-div img {
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.vid-info {
+    color: #5a5a5a;
+    font-size: 13px;
+
+}
+
+.vid-info a {
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/*--------------------------main content end ------------------------------*/
+
+
+
+
+@media (max-width: 900px) {
+    .menu {
+        display: none;
+
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .container,
+    .large-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .nav-right img {
+        display: none;
+
+    }
+
+    .nav-right .profile {
+        display: block;
+        width: 30px;
+    }
+
+    .nav-middle .search input {
+        width: 100px;
+
+    }
+
+    .nav-middle .mic-icon {
+        display: none;
+
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+}
+
+
+/*-------------------------------play-yt start---------------------------------*/
+
+.play-container {
+    padding-left: 2%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.play-video {
+    flex-basis: 69%;
+}
+
+.right-sidebar {
+    flex-basis: 30%;
+
+}
+
+.play-video video {
+    width: 100%;
+
+}
